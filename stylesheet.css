@@ -1,12 +1,16 @@
+div {
+        width:150;
+        height:100;
+        background:blue;
+        display:inline;
+}
 .first {
         background-color:red;
-        height:50px;
-        width:100px;
-        display:inline;
-        
+        text-decoration:none;
 }
 #second {
         font-style:verdana;
 }
+
 
         
