@@ -1,16 +1,69 @@
-div {
-        width:150;
-        height:100;
-        background:blue;
-        display:inline;
+body{
+    background-color:#C6E2FF;
+    }
+div{ 
+    
 }
-.first {
+ul{
+   list-style-type: none;
+   position:absolute;
+   margin-top:-1px;
+   margin-left:-40;
+   
+   
+    }
+a{
+    text-decoration:none;
+    }
+a:hover {
+	color: #cc0000;
+	font-weight: bold;
+    text-decoration:none;
+    
+}
+.sticker{
+    width:350;
+    height:200;
+    background-color:purple;
+    margin:30px;
+    border-radius:5px
+    
+    }
+.tipke {
+        background-color:orange;
+        border-top:1px solid ;
+        width:240px;
+        height:35px;
+        padding-top:15;
+        padding-left:30;
+                
+}
+
+
+#desno{
+        height:500px;
+        background-color:green;
+        margin-left:270px;
+        position:absolute;
+}
+
+#logo {
+        width:270;
+        height:55px;
         background-color:red;
-        text-decoration:none;
+        text-align:center;
+        padding-top:40;
+        float:left;                 
 }
-#second {
-        font-style:verdana;
-}
-
-
+#header{
+        height:95px;
+        background-color:blue;
         
+        
+}  
+#lijevi-f {
+        width:270px;
+        height:500px;
+        background-color:yellow;
+        
+}
