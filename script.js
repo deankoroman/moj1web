@@ -1,22 +1,39 @@
-// Check if the user is ready to play!
-confirm("I would like to play");
-var age=prompt("what is your age");
-if (age<13 )
-{ console.log("you have no responsibility");
-}else{
- console.log("you can play on");   
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paper";
+} else {
+	computerChoice = "scissors";
+};
+var compare = function(userChoice,computerChoice){
+if (userChoice === computerChoice){
+        return "The result is a tie!";
 }
-console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
-console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
-var userAnswer=prompt("Do you want to race Bieber on stage?");
-if (userAnswer==="yes" )
-{ console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
-}else{
- console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");   
+else if(userChoice === "rock") {
+                if(computerChoice === "scissors") {
+                    return "rock wins";
+                }
+                else{
+                    return "paper wins";  
+                }
 }
-var feedback=prompt("please rate this game");
-if (feedback>8 )
-{ console.log("Thank you! We should race at the next concert!");
-}else{
- console.log("I'll keep practicing coding and racing."); 
+else if(userChoice === "paper") {
+                if(computerChoice === "rock") {
+                    return "paper wins";
+                }
+                else{
+                    return "scissors wins";  
+                }
 }
+else if(userChoice === "scissors") {
+                if(computerChoice === "rock") {
+                    return "rock wins";
+                }
+                else{
+                    return "scissors wins";  
+                }
+}
+}
+compare(userChoice,computerChoice);
